@@ -1,0 +1,430 @@
+* {
+
+    color: #fff;
+  } 
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  #video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .nav {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 1.2em;
+    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    padding: 0.5;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: 0;
+  
+    padding: 0 1%;
+  }
+  /* Pusimos un saludo interactivo en lugar de un logo */
+  .saludo {
+    font-weight: bolder;
+    color: #3190a0;
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 7.5em;
+    animation: animsaludo 4s ;
+  }
+  
+  @keyframes animsaludo {
+    from {
+      width: 0;
+    }
+  }
+  .logo {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    display:flex;
+  }
+   .pnglogo {
+    width: 50px;
+    height: 50px;
+  } 
+  /* Barra de navegacion */
+  .socialmedia {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menu {
+    margin-top: 15px;
+    text-decoration: none;
+    
+     flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .socialmediaul {
+    display: contents;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .menuul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .menuli:hover {
+    opacity: 0.7;
+  }
+  
+  .socialmediali:hover {
+    opacity: 0.7;
+  }
+  .menuli {
+    list-style: none;
+    display: flex;
+    margin: 0.3em;
+  }
+  
+  .menuli.a {
+    color: #fff;
+    text-decoration-color: white;
+    text-decoration-line: none;
+  }
+  .menuli:last-child {
+    margin: 0.3em 2.5em 0.3em 0.3em !important;
+  }
+  
+  /* Estilos del menÃº wrapper */
+  .menu-wrapper {
+    display: none;
+  }
+  
+  .menu-toggle {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .menu-wrapper .menu {
+    display: none;
+  }
+  
+  .menu-wrapper .menu.open {
+    display: block;
+    
+    padding-right: 36px;
+   
+  }
+  
+  .socialmediali {
+    list-style: none;
+    display: flex;
+    margin: 0.5em;
+  }
+  .socialmediali:last-child {
+    margin: 0.5em 2.5em 0.5em 0.5em !important;
+  }
+  .logosocial {
+    font-size: 30px;
+  }
+  .logosocialanchor {
+    text-decoration: none;
+    color: #fff;
+  }
+  .logosocial,
+  .social {
+    height: 50px;
+    align-items: center;
+    display: flex;
+  }
+  
+  .eduul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .eduli {
+    list-style: none;
+    display: flex;
+    margin: 0.25em;
+  }
+  
+  .eduli.a {
+    color: #fff;
+    text-decoration-color: white;
+    text-decoration-line: none;
+  }
+  .eduli:last-child {
+    margin: 0.5em 2.5em 0.5em 0.5em !important;
+  }
+  
+  /* SOBRE MI */
+  h1 {
+    background: linear-gradient(45deg, #ff5f6d, #ffc371);
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+  h2 {
+    background: linear-gradient(45deg, #68c2a0, #4d4866);
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+  
+  #about-me h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  
+  .about-content img {
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  .about-content p {
+    color: #68c2a0;
+    font-weight: bold;
+    padding: 2rem;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    animation: gradiente 20s linear ;
+  }
+  
+  @keyframes gradiente {
+   
+    0% {
+      color: rgb(255, 255, 255);
+    }
+    33% {
+      color: blueviolet;
+      
+    }
+    66% {
+      color:wheat; 
+    }
+    100% {
+      color: #68c2a0;
+    }
+  }
+  
+  
+  .profile-image {
+    opacity: 50;
+    outline: none;
+    background: white;
+    cursor: inherit;
+  }
+  
+  /*card Experiencia*/
+  
+  .container {
+    width: 1000px;
+    position: relative;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .container .card {
+    position: relative;
+    cursor: pointer;
+    margin: 32px;
+    padding: 10px;
+  }
+  
+  .container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+    background: transparent;
+  }
+  
+  .container .card .face.face1 {
+    position: relative;
+    background: #ffffff; /*Fondo blanco para que se puedan ver los logos que poseen negros y naranjas(justo los mismos colores que elegui)*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+  
+  .container .card:hover .face.face1 {
+    background: transparent;
+    transform: translateY(0);
+  }
+  
+  .container .card .face.face1 .content {
+    opacity: 0.6; /*Cuando no me posiciono que se vea al 60%*/
+    transition: 0.5s;
+    background: transparent; /*Todo transparente para que no se noten detalles*/
+  }
+  
+  .container .card:hover .face.face1 .content {
+    opacity: 1; /*Cuando me posiciono que se vea al 100%*/
+  }
+  
+  .container .card .face.face1 .content img {
+    max-width: 100%;
+    max-height: 100%;
+    background: transparent; /*Todo transparente para que no se noten detalles*/
+    justify-content: center;
+  }
+  
+  .container .card .face.face1 .content h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: orange;
+    text-decoration: double;
+    background: transparent; /*Todo transparente para que no se noten detalles*/
+    text-align: center;
+    font-size: 2em;
+  }
+  .container .card .face.face2 .content p {
+    margin-top: 25%; /* Para que no quede muy pegado al texto*/
+    padding: 0;
+    text-align: center;
+    background: transparent; /*Todo transparente para que no se noten detalles*/
+    font-weight: bold;
+    justify-content: 75%;
+  }
+  
+  /*FOOTER*/
+  
+  .responsive-footer {
+    width: 100%;
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+   
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .footer-left {
+    flex: 1;
+    padding: 32px;
+  }
+  
+  .footer-links {
+    display: flex;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: white;
+    
+    margin: 0 10px;
+  }
+  
+  .footer-center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-center p {
+    color: white;
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .fa {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .footer-right {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-icons {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+  align-items: center;
+    
+    
+    
+  }
+  
+  .footer-icons a {
+    display: flex;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+  
+  
+  
+  }
+  
