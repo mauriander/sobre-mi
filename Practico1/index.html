@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="s" href="styles.css" />
+    <!-- fontawesome para poner icono github -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+
+    <title>Calculadora /mauriander</title>
+  </head>
+
+  <body>
+    <input type="number" id="num1" />
+    <label for="opciones"> OPERACION:</label>
+    <div>
+      <select id="opciones" name="opciones">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+    </div>
+    <!--     
+    <select>
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select> -->
+    <input type="number" id="num2" />
+    <button
+      id="botonigual"
+      onclick="calcular()"
+      class="btno"
+      style="grid-column: span 2"
+    >
+      =
+    </button>
+    <input type="number" id="result" />
+    <input type="text" id="resultado" />
+    <input
+      type="submit"
+      onclick="borrarCalc()"
+      value="Borrar"
+      style="margin-right: 16px"
+    />
+    <p id="resultado" style="font-size: 20px; margin-left: 8px"></p>
+    <div class="calculadora">
+      <button class="btnmio">
+        <a
+          href="https://github.com/mauriander"
+          target="_blank"
+          style="text-decoration: none"
+          >Repositorio Practico1 <i class="fab fa-github"></i
+        ></a>
+      </button>
+      <div class="display">Pantalla para mostrar</div>
+
+      <button class="btn" onclick="muestra7(7)">7</button>
+      <button class="btn" onclick="muestra8(8)">8</button>
+      <button class="btn" onclick="muestra9(9)">9</button>
+      <button class="btno" onclick="dividir()">/</button>
+      <button class="btn" onclick="muestra4(4)">4</button>
+      <button class="btn" onclick="muestra5(5)">5</button>
+      <button class="btn" onclick="muestra6(6)">6</button>
+      <button class="btno" onclick="multiplicar()">*</button>
+      <button class="btn" onclick="muestra1(1)">1</button>
+      <button class="btn" onclick="muestra2(2)">2</button>
+      <button class="btn" onclick="muestra3(3)">3</button>
+      <button class="btno" onclick="restar()">-</button>
+      <button class="btn" style="grid-column: span 2">0</button>
+      <button class="btno">.</button>
+      <button class="btno" onclick="sumar()">+</button>
+      <button class="btnc" style="grid-column: span 2">C</button>
+      <button
+        id="botonigual"
+        onclick="calcular()"
+        class="btno"
+        style="grid-column: span 2"
+      >
+        =
+      </button>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

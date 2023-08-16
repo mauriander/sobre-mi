@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.calculadora {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 300px;
+}
+
+.btn {
+    background-color: #555;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnmio {
+    background-color: #ffffff;
+    grid-column: span 4;
+    border: none;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btno {
+    background-color: #df9e14;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnc {
+    background-color: #22bbb3;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btno:hover,
+.btnc:hover {
+    opacity: 0.7;
+}
+
+.btn:active,
+.btno:active,
+.btnc:active {
+    background-color: #000000;
+    color: white;
+}
+
+.display {
+    grid-column: span 4;
+    grid-row: 2;
+    background-color: #222;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    text-align: right;
+    border-radius: 5px;
+}
