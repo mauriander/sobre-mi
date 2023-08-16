@@ -15,78 +15,108 @@
   </head>
 
   <body>
-    <input type="number" id="num1" />
-    <label for="opciones"> OPERACION:</label>
-    <div>
-      <select id="opciones" name="opciones">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-      </select>
-    </div>
-    <!--     
-    <select>
-      <option value="+">+</option>
-      <option value="-">-</option>
-      <option value="*">*</option>
-      <option value="/">/</option>
-    </select> -->
-    <input type="number" id="num2" />
-    <button
-      id="botonigual"
-      onclick="calcular()"
-      class="btno"
-      style="grid-column: span 2"
-    >
-      =
-    </button>
-    <input type="number" id="result" />
-    <input type="text" id="resultado" />
-    <input
-      type="submit"
-      onclick="borrarCalc()"
-      value="Borrar"
-      style="margin-right: 16px"
-    />
-    <p id="resultado" style="font-size: 20px; margin-left: 8px"></p>
-    <div class="calculadora">
-      <button class="btnmio">
-        <a
-          href="https://github.com/mauriander"
-          target="_blank"
-          style="text-decoration: none"
-          >Repositorio Practico1 <i class="fab fa-github"></i
-        ></a>
-      </button>
-      <div class="display">Pantalla para mostrar</div>
+    <div class="derecha">
+      <h2>Calculadora 1</h2>
+      <div class="calculadora">
+        <!-- required para que no este vacio en num 1 y num 2 -->
+        <input
+          type="number"
+          id="num1"
+          class="btn"
+          style="grid-column: span 3"
+          required
+        />
 
-      <button class="btn" onclick="muestra7(7)">7</button>
-      <button class="btn" onclick="muestra8(8)">8</button>
-      <button class="btn" onclick="muestra9(9)">9</button>
-      <button class="btno" onclick="dividir()">/</button>
-      <button class="btn" onclick="muestra4(4)">4</button>
-      <button class="btn" onclick="muestra5(5)">5</button>
-      <button class="btn" onclick="muestra6(6)">6</button>
-      <button class="btno" onclick="multiplicar()">*</button>
-      <button class="btn" onclick="muestra1(1)">1</button>
-      <button class="btn" onclick="muestra2(2)">2</button>
-      <button class="btn" onclick="muestra3(3)">3</button>
-      <button class="btno" onclick="restar()">-</button>
-      <button class="btn" style="grid-column: span 2">0</button>
-      <button class="btno">.</button>
-      <button class="btno" onclick="sumar()">+</button>
-      <button class="btnc" style="grid-column: span 2">C</button>
-      <button
-        id="botonigual"
-        onclick="calcular()"
-        class="btno"
-        style="grid-column: span 2"
-      >
-        =
-      </button>
+        <div style="grid-column: span 1" class="btnc">
+          <select id="opciones" name="opciones" onchange="deshabilitarnum2()">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="^2">^2</option>
+          </select>
+        </div>
+        <input
+          type="number"
+          id="num2"
+          class="btn"
+          style="grid-column: span 3"
+          required
+        />
+
+        <button
+          id="botonigual"
+          onclick="calcular()"
+          class="btno"
+          style="grid-column: span 1"
+        >
+          =
+        </button>
+        <!-- readonly solo para que sea lectura y no pueda ser modificado -->
+        <input
+          type="text"
+          id="resultado"
+          class="btnr"
+          style="grid-column: span 3"
+          readonly
+        />
+        <button class="btnc" style="grid-column: span 1" onclick="borrarCalc()">
+          C
+        </button>
+        <!-- <input
+        type="submit"
+        onclick="borrarCalc()"
+        value="Borrar"
+        style="margin-right: 16px"
+        class="btnc"
+      /> -->
+        <!-- <p id="resultado" style="font-size: 20px; margin-left: 8px"></p> -->
+      </div>
+    </div>
+    <div class="izquierda">
+      <h2>Calculadora 2</h2>
+      <div class="calculadora">
+        <button class="btnmio">
+          <a
+            href="https://github.com/mauriander"
+            target="_blank"
+            style="text-decoration: none"
+            >Repositorio Practico1 <i class="fab fa-github"></i
+          ></a>
+        </button>
+
+        <input type="text" id="result" class="display" readonly />
+        <button class="btn" onclick="muestra7()">7</button>
+        <button class="btn" onclick="muestra8()">8</button>
+        <button class="btn" onclick="muestra9()">9</button>
+        <button class="btno" onclick="dividir()">/</button>
+        <button class="btn" onclick="muestra4()">4</button>
+        <button class="btn" onclick="muestra5()">5</button>
+        <button class="btn" onclick="muestra6()">6</button>
+        <button class="btno" onclick="multiplicar()">*</button>
+        <button class="btn" onclick="muestra1()">1</button>
+        <button class="btn" onclick="muestra2()">2</button>
+        <button class="btn" onclick="muestra3()">3</button>
+        <button class="btno" onclick="restar()">-</button>
+        <button class="btn" onclick="muestra0()" style="grid-column: span 2">
+          0
+        </button>
+        <button class="btno" onclick="muestrapunto()">.</button>
+        <button class="btno" onclick="sumar()">+</button>
+        <button class="btnc" onclick="limpiar()" style="grid-column: span 2">
+          C
+        </button>
+        <button
+          id="botonigual"
+          onclick="calcular2()"
+          class="btno"
+          style="grid-column: span 2"
+        >
+          =
+        </button>
+      </div>
     </div>
 
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

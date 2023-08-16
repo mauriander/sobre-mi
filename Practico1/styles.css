@@ -2,12 +2,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 50vh;
     min-height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
 }
 
+/* dividimos en dos partes la pantalla para mostrar ambas calculadora y sea mas facil visualizar los cambios */
+.izquierda {
+    padding: 32px;
+    width: 50%;
+  }
+  
+  .derecha {
+    padding: 32px;
+    width: 50%;
+  }
+/* distribucion de la calculadora en modo grilla para que queden ordenados y un fondo */
 .calculadora {
     background-color: #333;
     border-radius: 10px;
@@ -18,7 +30,7 @@ body {
     grid-gap: 10px;
     max-width: 300px;
 }
-
+/* botonoes de la calculadora */
 .btn {
     background-color: #555;
     border: none;
@@ -28,7 +40,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/* es btnmio es el boton que redirigue al repositorio de github del proyecto */
 .btnmio {
     background-color: #ffffff;
     grid-column: span 4;
@@ -38,7 +50,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/* boton btno hace referencia a los botones de operacion se utiliza para diferenciar de los numeros normles */
 .btno {
     background-color: #df9e14;
     border: none;
@@ -48,7 +60,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/* boton celeste clear se utiliza para diferenciar de los numeros normles */
 .btnc {
     background-color: #22bbb3;
     border: none;
@@ -58,18 +70,28 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/* caundo paso el cursor por encima de boton cambie de tonalidad, ayuda a detectar */
 .btn:hover,
 .btno:hover,
 .btnc:hover {
     opacity: 0.7;
 }
-
+/* cuando anpreto el boton cambio de fondo */
 .btn:active,
 .btno:active,
 .btnc:active {
     background-color: #000000;
     color: white;
+}
+
+.btnr{
+    background-color: #222;
+    
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .display {
