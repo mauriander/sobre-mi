@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Piedra papel o tijera</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Piedra Papel o Tijera</h1>
+      <span id="user-score">0</span>:<span id="cpu-score">0</span>
+      <div class="tablero">
+        <div class="player">
+          <h2>Tu Eleccion</h2>
+          <div class="choices">
+            <button id="piedra" onclick="obtenerJugadaUsuario('piedra')">
+              Piedra
+            </button>
+            <button id="papel" onclick="obtenerJugadaUsuario('papel')">
+              Papel
+            </button>
+            <button id="tijera" onclick="obtenerJugadaUsuario('tijera')">
+              Tijera
+            </button>
+          </div>
+        </div>
+        <div class="computer">
+          <h2>Computadora</h2>
+          <div class="choices">
+            <button id="jugadaCompu">Esperando el resultado...</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="result">
+        <p id="repuesta"></p>
+        <p id="resultado"></p>
+      </div>
+    </div>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>
