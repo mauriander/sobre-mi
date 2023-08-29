@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    min-height: 80vh;
+    max-height: 80vh;
+}
+
+
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+/* Estilos para pantallas más pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .choices button {
+        width: 80px;
+    }
+
+}
+
+/* primera seccion */
+
+h1 {
+    color: #333;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+#totalcpu,
+#totalusuario {
+    margin: 16px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#nombreInput {
+    padding: 16px;
+    font-size: 16px;
+}
+
+#botonGuardar {
+    margin: 32px;
+    padding: 16px;
+    font-size: medium;
+    font-weight: bolder;
+    background-image: linear-gradient(to bottom, #614fb1, #2079b0);
+
+}
+
+#imagenPortada {
+    padding: 16px;
+    align-content: flex-start;
+    /* align-items:start */
+}
+
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.izquierda {
+    flex: 1;
+    padding: 10px;
+}
+
+.centro {
+    flex: 1;
+    padding-top: 10px;
+}
+
+.derecha {
+    flex: 1;
+    padding: 10px;
+}
+
+/* segunda d seccion */
+.tablero {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.player,
+.computer {
+    width: 48%;
+    padding: 10px;
+    border: none;
+
+    border-radius: 5px;
+    flex-wrap: wrap;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.choices {
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: black;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+
+
+#piedra,
+#jugadaCompu,
+#papel,
+#tijera {
+
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    background-color: white;
+
+}
+
+#piedra,
+#papel,
+#tijera img {
+    height: auto;
+    width: 100px;
+}

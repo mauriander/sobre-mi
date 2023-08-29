@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Piedra papel o tijera</title>
+    <link rel="shortcut icon" href="./img/pngwing.com.png" />
+    <meta name="PiedraPapelTijera" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Piedra Papel o Tijera</h1>
+      <div class="cont">
+        <div class="izquierda">
+          <img id="imagenportada" src="./img/pngwing.com.png" width="200" />
+        </div>
+        <div class="centro">
+          <input type="text" id="nombreInput" placeholder="Ingresa tu nombre" />
+          <button id="botonGuardar">Guardar</button>
+          <br />
+
+          <!-- <span id="nombreJugador"></span> <span id="npc">COMPUTADORA</span>
+        <p></p> -->
+          <span id="totalusuario">0</span> : <span id="totalcpu">0</span>
+        </div>
+        <div class="derecha">
+          <a
+            href="./../index.html"
+            target="_blank"
+            style="text-decoration: none"
+            >VOLVER A INICIO
+          </a>
+        </div>
+      </div>
+      <div class="result">
+        <p id="repuesta"></p>
+        <p id="resultado"></p>
+      </div>
+      <div class="tablero">
+        <div class="player">
+          <h2 id="nombreJugador"></h2>
+          <div class="choices">
+            <button id="piedra" onclick="obtenerJugadaUsuario('piedra')">
+              <img src="./img/piedra-removebg-preview.png" />
+            </button>
+            <button id="papel" onclick="obtenerJugadaUsuario('papel')">
+              <img src="./img/papel-removebg-preview.png" />
+            </button>
+            <button id="tijera" onclick="obtenerJugadaUsuario('tijera')">
+              <img src="./img/tijera-removebg-preview.png" />
+            </button>
+          </div>
+        </div>
+        <div class="computer">
+          <h2>Computadora</h2>
+          <div class="choices">
+            <button id="jugadaCompu">Esperando el resultado...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <script src="./script.js" async defer></script>
+  </body>
+</html>
