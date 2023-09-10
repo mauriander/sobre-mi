@@ -59,6 +59,14 @@ h1 {
     background-image: linear-gradient(to bottom, #614fb1, #2079b0);
 
 }
+#botonReiniciar {
+    margin: 32px;
+    padding: 16px;
+    font-size: medium;
+    font-weight: bolder;
+    background-image: linear-gradient(to bottom, #614fb1, #8220b0);
+
+}
 
 #imagenPortada {
     padding: 16px;

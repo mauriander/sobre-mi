@@ -6,23 +6,39 @@ var totalcpup = document.getElementById("totalcpu");
 
 //GuardarNombre
 botonGuardar.addEventListener("click", function () {
-  var res = confirm("Esta de seguro de reiniciar la partida?\nSe borraron los datos de esta partida")
-  if(res){
+  var res = confirm("Empezar una nueva partida")
+  
     var nombreIngresado = nombreInput.value;
   nombreJugador.textContent = nombreIngresado;
+  if(!validarNombre(nombreJugador.textContent)){
+    alert('Debe ingresar el nombre de Jugador valido');    
+    botonGuardar.disabled = false;
+    return;
+  }
+  else{
+    botonGuardar.disabled = true;
+  }
   var victorias = 0;var derrotas = 0;
   document.getElementById("totalusuario").textContent = victorias;
-  document.getElementById("totalcpu").textContent = derrotas;}
-  else{ }
-
+  document.getElementById("totalcpu").textContent = derrotas;
+  
 });
 
 function validarNombre(nombre){
     if(nombre == undefined){return false;}
     if (nombre === "") { return false;  } 
-
+    if(nombre.trim().length <1){ return false;  } 
 return true;
 }
+botonReiniciar.addEventListener("click", function () {
+  var res = confirm("Esta de seguro de reiniciar la partida?\nSe borraron los datos de esta partida")
+  if(res){ 
+    document.getElementById("nombreInput").value="";
+  reiniciarcolor();
+  location.reload();}
+  else{ }
+
+});
 //De esta funcion se llaman a las funciones siguientes
 function obtenerJugadaUsuario(jugada) {
     setTimeout(reiniciarcolor(),1000);
