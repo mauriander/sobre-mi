@@ -296,6 +296,20 @@
   }
   
  
+    .nav-link {
+      
+      padding: 8px;
+      color: #d90368;
+      font-family: sans-serif;
+      font-weight: bolder;
   
+  
+    }
+  
+    .nav-link:hover {
+      
+      color: #d90368;
+      opacity: 0.7;
+    }
   
   

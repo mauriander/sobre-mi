@@ -7,9 +7,6 @@ OBJETIVO: Crear el juego Piedra Papel Tijera
 - Validacion de los campos.
 - Manejo de errores.
 - Personalizacion.
-- Codigo comentado y explicado.
-- Prueba y depuracion.
-- Test.
 
 # Piedra Papel Tijera
 
